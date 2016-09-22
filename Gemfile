@@ -36,9 +36,17 @@ group :development, :test do
   gem 'byebug', platform: :mri
 end
 
+
+group :development do
+  gem 'rspec-rails'
+end
+
+group :test do
+  gem 'spork', '0.9.0.rc8'
+end
+
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
-  gem 'rspec', '~> 3.5'
   gem 'web-console'
   gem 'listen', '~> 3.0.5'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
